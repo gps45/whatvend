@@ -1,6 +1,6 @@
 const SheetsAPI = (() => {
   function construirUrl(sheetId, pestana) {
-    return `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(pestana)}&t=${Date.now()}`;
+  return `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:csv&headers=1&sheet=${encodeURIComponent(pestana)}&t=${Date.now()}`;
   }
 
   function parseCSV(texto) {
