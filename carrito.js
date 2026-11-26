@@ -162,5 +162,5 @@ const CarritoAPI = (() => {
     document.getElementById("modal-carrito").classList.add("oculto");
   }
 
-  return { cargar, agregarItem, cambiarCantidad, vaciar, abrirModal, cerrarModal };
+ return { cargar, agregarItem, cambiarCantidad, vaciar, abrirModal, cerrarModal, actualizarBarra };
 })();
