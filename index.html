@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cargando tienda...</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app-loader" class="loader-pantalla">
+    <div class="spinner"></div>
+    <p>Cargando catálogo...</p>
+  </div>
+
+  <div id="vista-portada" class="portada oculto"></div>
+
+  <div id="app-principal" class="oculto">
+    <header id="header-tienda" class="header-tienda"></header>
+    <main id="contenedor-secciones" class="contenedor-secciones"></main>
+    <footer id="footer-tienda" class="footer-tienda"></footer>
+  </div>
+
+  <!-- Modal Historia -> Lista -> Detalle -->
+  <div id="modal-historia" class="modal oculto">
+    <div class="modal-contenido">
+      <div class="modal-cabecera">
+        <h3 id="modal-historia-titulo"></h3>
+        <button type="button" id="cerrar-modal-historia" class="btn-cerrar">&times;</button>
+      </div>
+      <div id="modal-historia-cuerpo" class="modal-cuerpo"></div>
+    </div>
+  </div>
+
+  <!-- Modal Detalle + Extras -->
+  <div id="modal-producto" class="modal oculto">
+    <div class="modal-contenido">
+      <div class="modal-cabecera">
+        <h3 id="modal-producto-titulo"></h3>
+        <button type="button" id="cerrar-modal-producto" class="btn-cerrar">&times;</button>
+      </div>
+      <div id="modal-producto-cuerpo" class="modal-cuerpo"></div>
+      <div id="modal-producto-pie" class="modal-pie"></div>
+    </div>
+  </div>
+
+  <!-- Barra flotante + Modal Carrito -->
+  <div id="barra-carrito" class="barra-carrito oculto">
+    <span id="carrito-resumen">0 items</span>
+    <span id="carrito-total">$0.00</span>
+    <button type="button" id="btn-abrir-carrito" class="btn-ver-carrito">Ver pedido</button>
+  </div>
+
+  <div id="modal-carrito" class="modal oculto">
+    <div class="modal-contenido">
+      <div class="modal-cabecera">
+        <h3>Tu pedido</h3>
+        <button type="button" id="cerrar-modal-carrito" class="btn-cerrar">&times;</button>
+      </div>
+      <div id="modal-carrito-cuerpo" class="modal-cuerpo"></div>
+      <div id="modal-carrito-pie" class="modal-pie"></div>
+    </div>
+  </div>
+
+  <script src="tiendas.js"></script>
+  <script src="sheets.js"></script>
+  <script src="whatsapp.js"></script>
+  <script src="carrito.js"></script>
+  <script src="extras.js"></script>
+  <script src="vistas.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
